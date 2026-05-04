@@ -11,85 +11,232 @@
 </head>
 <body>
   <nav class="navbar">
-    <a href="#sobre">Sobre</a>
-    <a href="#projetos">Projetos</a>
-    <a href="#atividades">Faculdade</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#contato">Contato</a>
+    <a href="#sobre" data-i18n="navAbout">Sobre</a>
+    <a href="#projetos-academicos" data-i18n="navAcademicProjects">Projetos Acadêmicos</a>
+    <a href="#projetos-pessoais" data-i18n="navPersonalProjects">Projetos Pessoais</a>
+    <a href="#atividades" data-i18n="navCollege">Faculdade</a>
+    <a href="#cursos" data-i18n="navCourses">Cursos</a>
+    <a href="#contato" data-i18n="navContact">Contato</a>
+    <div class="controls">
+      <button id="theme-toggle" class="control-button" type="button" data-i18n="toggleTheme">Tema claro</button>
+      <button id="language-toggle" class="control-button" type="button">EN</button>
+    </div>
   </nav>
 
   <header class="container" data-aos="fade-down">
     <img src="foto-vitor.jpg" alt="Foto de Vitor" class="perfil">
-    <h1>Olá, tudo bem? Me chamo Vitor Cezar e seja bem-vindo(a) ao meu repositório 👋</h1>
-    <p>Desenvolvedor Web & Estudante de DSM</p>
-    <a href="#projetos" class="botao">Veja meus projetos</a>
+    <h1 data-i18n="heroTitle">Olá, tudo bem? Me chamo Vitor Cezar e seja bem-vindo(a) ao meu repositório 👋</h1>
+    <p data-i18n="heroSubtitle">Desenvolvedor Web & Estudante de DSM</p>
+    <a href="#projetos-academicos" class="botao" data-i18n="heroButton">Veja meus projetos</a>
   </header>
 
   <section id="sobre" class="container" data-aos="fade-up">
-    <h2>Sobre mim</h2>
-    <p>Atualmente faço curso de DSM (Desenvolvimento de Software Multiplataforma) na Fatec/Jacareí e gosto de criar soluções simples, funcionais e bonitas. Tento manter o foco em acessibilidade, boas práticas e experiência do usuário.</p>
-    <p>Desde pequeno sempre fui curioso por tecnologia, o que me levou a escolher essa área. Durante a faculdade, venho me desenvolvendo em projetos práticos, estudando linguagens como JavaScript, TypeScript e frameworks como React, NodeJS entre outros.</p> 
-    <p>Sou mais fã da parte de Back-End na programação, pois sempre gostei de lógica e matématica quando era mais novo.</p>
-    <p>Estou em constante aprendizado e procuro sempre aplicar o que aprendo em projetos pessoais e acadêmicos.</p>
+    <h2 data-i18n="aboutTitle">Sobre mim</h2>
+    <p data-i18n="aboutText1">Atualmente faço curso de DSM (Desenvolvimento de Software Multiplataforma) na Fatec/Jacareí e gosto de criar soluções simples, funcionais e bonitas. Tento manter o foco em acessibilidade, boas práticas e experiência do usuário.</p>
+    <p data-i18n="aboutText2">Desde pequeno sempre fui curioso por tecnologia, o que me levou a escolher essa área. Durante a faculdade, venho me desenvolvendo em projetos práticos, estudando linguagens como JavaScript, TypeScript e frameworks como React, NodeJS entre outros.</p> 
+    <p data-i18n="aboutText3">Sou mais fã da parte de Back-End na programação, pois sempre gostei de lógica e matemática quando era mais novo.</p>
+    <p data-i18n="aboutText4">Estou em constante aprendizado e procuro sempre aplicar o que aprendo em projetos pessoais e acadêmicos.</p>
   </section>
 
-  <section id="projetos" class="container" data-aos="fade-up">
-    <h2>Projetos Acadêmicos</h2>
+  <section id="projetos-academicos" class="container" data-aos="fade-up">
+    <h2 data-i18n="academicProjectsTitle">Projetos Acadêmicos</h2>
     <div class="grid">
       <div class="card">
+        <h3>Mentora - App de auxílio nos estudos com IA</h3>
+        <p data-i18n="academicProjectMentoraDesc">Aplicação feita em React/ReactNative + PostgreSQL + Prisma + NodeJS + TypeScript + Python + C++</p>
+        <a href="https://github.com/innocode-solutions/abp_5dsm" target="_blank" data-i18n="viewProject">Ver projeto</a>
+      </div>
+      <div class="card">
         <h3>floatData - App para monitoramento de derivadores</h3>
-        <p>Aplicação feita em React/ReactNative + PostgreSQL + NodeJS + Typescript + C++</p>
-        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM" target="_blank">Ver projeto</a>
+        <p data-i18n="academicProject1Desc">Aplicação feita em React/ReactNative + PostgreSQL + NodeJS + TypeScript + C++</p>
+        <a href="https://github.com/InnoCodeSolutions/ABP_4DSM" target="_blank" data-i18n="viewProject">Ver projeto</a>
       </div>
       <div class="card">
         <h3>RAMG.O - Site de controle de calorias</h3>
-        <p>Aplicação feita em React + MongoDB+ NodeJS + Typescript</p>
-        <a href="https://github.com/InnoCodeSolutions/ABP_3/" target="_blank">Ver projeto</a>
+        <p data-i18n="academicProject2Desc">Aplicação feita em React + MongoDB + NodeJS + TypeScript</p>
+        <a href="https://github.com/InnoCodeSolutions/ABP_3/" target="_blank" data-i18n="viewProject">Ver projeto</a>
       </div>
       <div class="card">
         <h3>Visiona - Manipulação de projetos de mapeamento</h3>
-        <p>Aplicação feita em React + PostgreSQL + Typescript</p>
-        <a href="https://github.com/Team-The-Code/API-2DSM-2024/" target="_blank">Ver projeto</a>
+        <p data-i18n="academicProject3Desc">Aplicação feita em React + PostgreSQL + TypeScript</p>
+        <a href="https://github.com/Team-The-Code/API-2DSM-2024/" target="_blank" data-i18n="viewProject">Ver projeto</a>
       </div>
       <div class="card">
-        <h3>Plataforma para aprendizado sobre SCRUM</h3>
-        <p>Aplicação feita em HTML5 + CSS3 + Javascript</p>
-        <a href="https://github.com/Team-The-Code/API-2DSM-2024/" target="_blank">Ver projeto</a>
+        <h3 data-i18n="academicProject4Title">Plataforma para aprendizado sobre SCRUM</h3>
+        <p data-i18n="academicProject4Desc">Aplicação feita em HTML5 + CSS3 + JavaScript</p>
+        <a href="https://github.com/Team-The-Code/API-2DSM-2024/" target="_blank" data-i18n="viewProject">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos-pessoais" class="container" data-aos="fade-up">
+    <h2 data-i18n="personalProjectsTitle">Projetos Pessoais</h2>
+    <div class="grid">
+      <div class="card">
+        <h3 data-i18n="personalProjectsComingSoonTitle">Projetos em breve</h3>
+        <p data-i18n="personalProjectsComingSoonDesc">Ainda não possuo projetos pessoais publicados, mas em breve adicionarei novos projetos aqui.</p>
       </div>
     </div>
   </section>
 
   <section id="atividades" class="container" data-aos="fade-up">
-    <h2>Atividades Acadêmicas</h2>
-    <p>Aqui estão algumas atividades práticas desenvolvidas durante a faculdade:</p>
+    <h2 data-i18n="activitiesTitle">Atividades Acadêmicas</h2>
+    <p data-i18n="activitiesSubtitle">Aqui estão algumas atividades práticas desenvolvidas durante a faculdade:</p>
     <ul>
-      <li><a href="https://github.com/vooshybee/mat_para_computacao." target="_blank">Aprendizado sobre função iterativa e recursiva;</a></li>
-      <li><a href="https://github.com/vooshybee/desenvolvimentoweb2" target="_blank">Aprendizado sobre React Context e Styled Components;</a></li>
-      <li><a href="https://github.com/vooshybee/conversor-de-moedas" target="_blank">Conversor de Moedas utilizando ExchangeAPI.</a></li>
+      <li><a href="https://github.com/vooshybee/mat_para_computacao." target="_blank" data-i18n="activity1">Aprendizado sobre função iterativa e recursiva.</a></li>
+      <li><a href="https://github.com/vooshybee/desenvolvimentoweb2" target="_blank" data-i18n="activity2">Aprendizado sobre React Context e Styled Components.</a></li>
+      <li><a href="https://github.com/vooshybee/conversor-de-moedas" target="_blank" data-i18n="activity3">Conversor de moedas utilizando ExchangeAPI.</a></li>
     </ul>
   </section>
 
   <section id="cursos" class="container" data-aos="fade-up">
-    <h2>Cursos Complementares</h2>
+    <h2 data-i18n="coursesTitle">Cursos Complementares</h2>
     <ul>
-      <li>Algoritmos e Lógica de Programação - Udemy.</li>
-      <li></li>
+      <li data-i18n="course1">Algoritmos e Lógica de Programação - Udemy.</li>
+      <li data-i18n="course2">Formação em JavaScript e TypeScript (em andamento).</li>
     </ul>
   </section>
 
   <section id="contato" class="container" data-aos="fade-up">
-    <h2>Contato</h2>
+    <h2 data-i18n="contactTitle">Contato</h2>
     <p>Email: vitorczayas@gmail.com</p>
     <p><a href="https://www.linkedin.com/in/vitor-souza-29077228b/" target="_blank">LinkedIn</a> | <a href="https://github.com/vooshybee" target="_blank">GitHub</a></p>
   </section>
 
   <footer class="container" data-aos="fade-up">
-    <p>&copy; 2025 Vitor Cezar</p>
+    <p>&copy; 2026 Vitor Cezar</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
+
+    const translations = {
+      "pt-BR": {
+        pageTitle: "Portfólio - Vitor Cezar",
+        navAbout: "Sobre",
+        navAcademicProjects: "Projetos Acadêmicos",
+        navPersonalProjects: "Projetos Pessoais",
+        navCollege: "Faculdade",
+        navCourses: "Cursos",
+        navContact: "Contato",
+        heroTitle: "Olá, tudo bem? Me chamo Vitor Cezar e seja bem-vindo(a) ao meu repositório 👋",
+        heroSubtitle: "Desenvolvedor Web & Estudante de DSM",
+        heroButton: "Veja meus projetos",
+        aboutTitle: "Sobre mim",
+        aboutText1: "Atualmente faço curso de DSM (Desenvolvimento de Software Multiplataforma) na Fatec/Jacareí e gosto de criar soluções simples, funcionais e bonitas. Tento manter o foco em acessibilidade, boas práticas e experiência do usuário.",
+        aboutText2: "Desde pequeno sempre fui curioso por tecnologia, o que me levou a escolher essa área. Durante a faculdade, venho me desenvolvendo em projetos práticos, estudando linguagens como JavaScript, TypeScript e frameworks como React, NodeJS entre outros.",
+        aboutText3: "Sou mais fã da parte de Back-End na programação, pois sempre gostei de lógica e matemática quando era mais novo.",
+        aboutText4: "Estou em constante aprendizado e procuro sempre aplicar o que aprendo em projetos pessoais e acadêmicos.",
+        academicProjectsTitle: "Projetos Acadêmicos",
+        academicProjectMentoraDesc: "Aplicação feita em React/ReactNative + PostgreSQL + Prisma + NodeJS + TypeScript + Python + C++",
+        academicProject1Desc: "Aplicação feita em React/ReactNative + PostgreSQL + NodeJS + TypeScript + C++",
+        academicProject2Desc: "Aplicação feita em React + MongoDB + NodeJS + TypeScript",
+        academicProject3Desc: "Aplicação feita em React + PostgreSQL + TypeScript",
+        academicProject4Title: "Plataforma para aprendizado sobre SCRUM",
+        academicProject4Desc: "Aplicação feita em HTML5 + CSS3 + JavaScript",
+        personalProjectsTitle: "Projetos Pessoais",
+        personalProjectsComingSoonTitle: "Projetos em breve",
+        personalProjectsComingSoonDesc: "Ainda não possuo projetos pessoais publicados, mas em breve adicionarei novos projetos aqui.",
+        viewProject: "Ver projeto",
+        activitiesTitle: "Atividades Acadêmicas",
+        activitiesSubtitle: "Aqui estão algumas atividades práticas desenvolvidas durante a faculdade:",
+        activity1: "Aprendizado sobre função iterativa e recursiva.",
+        activity2: "Aprendizado sobre React Context e Styled Components.",
+        activity3: "Conversor de moedas utilizando ExchangeAPI.",
+        coursesTitle: "Cursos Complementares",
+        course1: "Algoritmos e Lógica de Programação - Udemy.",
+        course2: "Formação em JavaScript e TypeScript (em andamento).",
+        contactTitle: "Contato",
+        toggleThemeDark: "Tema claro",
+        toggleThemeLight: "Tema escuro"
+      },
+      en: {
+        pageTitle: "Portfolio - Vitor Cezar",
+        navAbout: "About",
+        navAcademicProjects: "Academic Projects",
+        navPersonalProjects: "Personal Projects",
+        navCollege: "College",
+        navCourses: "Courses",
+        navContact: "Contact",
+        heroTitle: "Hi there! I'm Vitor Cezar and welcome to my repository 👋",
+        heroSubtitle: "Web Developer & DSM Student",
+        heroButton: "See my projects",
+        aboutTitle: "About me",
+        aboutText1: "I am currently studying DSM (Multiplatform Software Development) at Fatec/Jacarei and I enjoy building simple, functional, and beautiful solutions. I focus on accessibility, best practices, and user experience.",
+        aboutText2: "Since I was a kid I have been curious about technology, which led me to this field. During college, I have been growing through practical projects while studying languages like JavaScript, TypeScript, and frameworks such as React and NodeJS.",
+        aboutText3: "I am especially interested in back-end development because I have always enjoyed logic and math.",
+        aboutText4: "I am constantly learning and always trying to apply what I learn in personal and academic projects.",
+        academicProjectsTitle: "Academic Projects",
+        academicProjectMentoraDesc: "Application built with React/ReactNative + PostgreSQL + Prisma + NodeJS + TypeScript + Python + C++",
+        academicProject1Desc: "Application built with React/ReactNative + PostgreSQL + NodeJS + TypeScript + C++",
+        academicProject2Desc: "Application built with React + MongoDB + NodeJS + TypeScript",
+        academicProject3Desc: "Application built with React + PostgreSQL + TypeScript",
+        academicProject4Title: "SCRUM Learning Platform",
+        academicProject4Desc: "Application built with HTML5 + CSS3 + JavaScript",
+        personalProjectsTitle: "Personal Projects",
+        personalProjectsComingSoonTitle: "Projects coming soon",
+        personalProjectsComingSoonDesc: "I do not have published personal projects yet, but I will add new ones here soon.",
+        viewProject: "View project",
+        activitiesTitle: "Academic Activities",
+        activitiesSubtitle: "Here are some practical activities developed during college:",
+        activity1: "Learning about iterative and recursive functions.",
+        activity2: "Learning about React Context and Styled Components.",
+        activity3: "Currency converter using ExchangeAPI.",
+        coursesTitle: "Complementary Courses",
+        course1: "Algorithms and Programming Logic - Udemy.",
+        course2: "JavaScript and TypeScript Program (in progress).",
+        contactTitle: "Contact",
+        toggleThemeDark: "Light theme",
+        toggleThemeLight: "Dark theme"
+      }
+    };
+
+    const languageButton = document.getElementById("language-toggle");
+    const themeButton = document.getElementById("theme-toggle");
+
+    function applyLanguage(language) {
+      const dictionary = translations[language];
+      document.documentElement.lang = language;
+      document.title = dictionary.pageTitle;
+      document.querySelectorAll("[data-i18n]").forEach((element) => {
+        const key = element.getAttribute("data-i18n");
+        if (dictionary[key]) {
+          element.textContent = dictionary[key];
+        }
+      });
+      languageButton.textContent = language === "pt-BR" ? "EN" : "PT-BR";
+      localStorage.setItem("portfolio-language", language);
+      updateThemeButtonText();
+    }
+
+    function updateThemeButtonText() {
+      const language = localStorage.getItem("portfolio-language") || "pt-BR";
+      const isLight = document.body.classList.contains("light-theme");
+      const dictionary = translations[language];
+      themeButton.textContent = isLight ? dictionary.toggleThemeLight : dictionary.toggleThemeDark;
+    }
+
+    function applyTheme(theme) {
+      document.body.classList.toggle("light-theme", theme === "light");
+      localStorage.setItem("portfolio-theme", theme);
+      updateThemeButtonText();
+    }
+
+    languageButton.addEventListener("click", () => {
+      const current = localStorage.getItem("portfolio-language") || "pt-BR";
+      applyLanguage(current === "pt-BR" ? "en" : "pt-BR");
+    });
+
+    themeButton.addEventListener("click", () => {
+      const currentTheme = localStorage.getItem("portfolio-theme") || "dark";
+      applyTheme(currentTheme === "dark" ? "light" : "dark");
+    });
+
+    const savedLanguage = localStorage.getItem("portfolio-language") || "pt-BR";
+    const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
+    applyLanguage(savedLanguage);
+    applyTheme(savedTheme);
   </script>
 </body>
 </html>
