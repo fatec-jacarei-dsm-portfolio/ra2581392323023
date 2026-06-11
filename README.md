@@ -31,7 +31,7 @@ O portfólio está disponível pela página publicada no GitHub Pages:
 
 ## Demonstração
 
-Link do YouTube: em breve.
+Link do YouTube: https://youtu.be/s0p4lb7RHK0.
 
 ## Tecnologias do portfólio
 
@@ -48,7 +48,6 @@ Link do YouTube: em breve.
 |-- README.md
 `-- docs
     |-- README.md
-    |-- foto-vitor.jpg
     |-- index.css
     `-- index.html
 ```
