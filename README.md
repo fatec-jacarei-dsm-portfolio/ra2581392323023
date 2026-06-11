@@ -1,6 +1,6 @@
 # Portfólio de Projetos - Fatec Jacareí
 
-Portfólio acadêmico de **Vitor Cezar de Souza**, estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí.
+Portfólio acadêmico de **Vitor Cezar**, estudante de Desenvolvimento de Software Multiplataforma na Fatec Jacareí.
 
 O projeto apresenta informações pessoais, projetos acadêmicos, atividades desenvolvidas durante a faculdade, cursos complementares e formas de contato.
 
@@ -55,6 +55,5 @@ Link do YouTube: em breve.
 
 ## Contato
 
-- Email: vitorczayas@gmail.com
 - LinkedIn: [Vitor Souza](https://www.linkedin.com/in/vitor-souza-29077228b/)
 - GitHub: [vooshybee](https://github.com/vooshybee)
